@@ -1,27 +1,27 @@
 function Footer() {
   return (
     <footer>
-      <img />
+      <img src="" alt="" />
       <section>
         <h4>Doormat Navigation</h4>
         <ul>
           <li>
-            <a>Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="">About</a>
           </li>
           <li>
-            <a>Menu</a>
+            <a href="">Menu</a>
           </li>
           <li>
-            <a>Reservations</a>
+            <a href="">Reservations</a>
           </li>
           <li>
-            <a>Order Online</a>
+            <a href="">Order Online</a>
           </li>
           <li>
-            <a>Log In</a>
+            <a href="">Log In</a>
           </li>
         </ul>
       </section>
@@ -40,3 +40,5 @@ function Footer() {
     </footer>
   );
 }
+
+export default Footer;
