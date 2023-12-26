@@ -18,7 +18,6 @@ main {
 
 nav {
   display: grid;
-  grid-template-rows: auto;
   font-weight: bold;
 }
 
@@ -36,12 +35,12 @@ a {
   color: white;
 }
 
-article h1 {
+.hero-section h1 {
   color: #f4ce14;
   font-size: 64px;
 }
 
-article h2 {
+.hero-section h2 {
   color: white;
   font-size: 40px;
 }
