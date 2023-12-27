@@ -12,12 +12,12 @@ code {
     monospace;
 }
 
-main {
-  display: grid;
+nav {
+  text-align: center'
 }
 
-nav {
-  display: grid;
+nav,
+.item a {
   font-weight: bold;
 }
 
@@ -31,20 +31,74 @@ a {
 }
 
 .hero-section {
+  display: grid;
+  grid-template-columns: 400px 100px;
   background-color: #495e57;
   color: white;
+  margin: auto;
+  padding: 50px;
+  padding-top: 0px;
 }
 
 .hero-section h1 {
   color: #f4ce14;
   font-size: 64px;
+  margin-bottom: 0px;
 }
 
 .hero-section h2 {
   color: white;
   font-size: 40px;
+  margin-top: 0px;
 }
 
 button {
   background-color: #f4ce14;
+  border-radius: 16px;
+}
+
+.highlights {
+  padding: 50px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  max-width: 960px;
+}
+
+.item {
+  background-color: rgb(230, 229, 229);
+  text-align: left;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  background-color: #495e57;
+  color: white;
+}
+
+.about {
+  display: grid;
+  padding: 50px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+  background-color: #495e57;
+  color: white;
 }
