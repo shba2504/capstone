@@ -13,7 +13,8 @@ code {
 }
 
 nav {
-  text-align: center'
+  text-align: right;
+  padding-right: 50px;
 }
 
 nav,
@@ -28,6 +29,7 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  font-family: karla;
 }
 
 .hero-section {
@@ -43,18 +45,33 @@ a {
 .hero-section h1 {
   color: #f4ce14;
   font-size: 64px;
+  font-family: markazi;
   margin-bottom: 0px;
 }
 
 .hero-section h2 {
   color: white;
   font-size: 40px;
+  font-family: markazi;
   margin-top: 0px;
+}
+
+.hero-section p {
+  font-family: karla;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-family: karla;
 }
 
 button {
   background-color: #f4ce14;
   border-radius: 16px;
+  border: none;
+  font-weight: bold;
+  padding: 7px;
 }
 
 .highlights {
@@ -63,23 +80,39 @@ button {
 
 .container1 {
   display: grid;
-  grid-template-columns: 8fr 1fr;
+  grid-template-columns: 11fr 1fr;
 }
 
 .container2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   grid-column-gap: 20px;
-  max-width: 960px;
 }
 
 .item {
   background-color: rgb(230, 229, 229);
   text-align: left;
-  padding: 20px;
-  border: 1px solid;
   border-radius: 16px;
   margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.item h4 {
+  font-family: karla;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.item p,
+.item a {
+  margin: 10px;
+  padding: 10px;
 }
 
 .testimonials {
