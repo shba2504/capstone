@@ -1,7 +1,9 @@
+import Logo from "../icons/Logo.svg";
+
 function Header() {
   return (
     <header>
-      <img src="./icons/Logo.svg" alt="Little Lemon logo" />
+      <img src={Logo} alt="Little Lemon logo" />
     </header>
   );
 }

@@ -1,3 +1,4 @@
+import restaurantfood from "../images/restauranfood.jpg";
 import greeksalad from "../images/greeksalad.jpg";
 import Bruschetta from "../images/Bruschetta.jpg";
 import lemondessert from "../images/lemondessert.jpg";
@@ -15,7 +16,7 @@ function Main() {
           </p>
           <button>Reserve a Table</button>
         </article>
-        <img />
+        <img src={restaurantfood} alt="man holding a tray of food" />
       </div>
       <div className="highlights">
         <article>

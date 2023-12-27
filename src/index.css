@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+header img {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
 nav {
   text-align: right;
   padding-right: 50px;
@@ -62,6 +67,11 @@ a {
   font-weight: bold;
 }
 
+.hero-section img {
+  width: 300px;
+  border-radius: 16px;
+}
+
 p {
   font-family: karla;
 }
@@ -97,7 +107,7 @@ button {
   padding-bottom: 10px;
 }
 
-img {
+.item img {
   width: 100%;
   border-radius: 16px;
 }
