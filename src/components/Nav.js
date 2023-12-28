@@ -1,12 +1,12 @@
 function Nav() {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
         <li>
           <a href="#">Home</a>
         </li>
         <li>
-          <a>About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a>Menu</a>

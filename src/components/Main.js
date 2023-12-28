@@ -2,6 +2,8 @@ import restaurantfood from "../images/restauranfood.jpg";
 import greeksalad from "../images/greeksalad.jpg";
 import Bruschetta from "../images/Bruschetta.jpg";
 import lemondessert from "../images/lemondessert.jpg";
+import MarioandAdrianA from "../images/MarioandAdrianA.jpg";
+import MarioandAdrianb from "../images/MarioandAdrianb.jpg";
 
 function Main() {
   return (
@@ -14,6 +16,7 @@ function Main() {
             We are a family-owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
+          <br />
           <button>Reserve a Table</button>
         </article>
         <img src={restaurantfood} alt="man holding a tray of food" />
@@ -37,7 +40,7 @@ function Main() {
                 our Chicago-style feta cheese, garnished with crunchy garlic and
                 rosemary croutons.
               </p>
-              <a>Order Delivery</a>
+              <a href="#">Order Delivery</a>
             </section>
             <section className="item">
               <img src={Bruschetta} alt="bruschetta on a wooden platter" />
@@ -46,7 +49,7 @@ function Main() {
                 Our Bruschetta is made from grilled bread that has been smeared
                 with garlic and seasoned with salt and olive oil.
               </p>
-              <a>Order Delivery</a>
+              <a href="#">Order Delivery</a>
             </section>
             <section className="item">
               <img src={lemondessert} alt="lemon cake with a fork" />
@@ -56,27 +59,48 @@ function Main() {
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
-              <a>Order Delivery</a>
+              <a href="#">Order Delivery</a>
             </section>
           </div>
         </article>
       </div>
-      <div className="testimonials">
-        <article>
+      <div>
+        <article className="testimonials">
           <h2>Testimonials</h2>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
+          <section className="testimonials"></section>
+          <section className="testimonials"></section>
+          <section className="testimonials"></section>
+          <section className="testimonials"></section>
         </article>
       </div>
-      <div className="about">
+      <div>
         <article>
-          <h2>Little Lemon</h2>
-          <h3>Chicago</h3>
-          <p></p>
-          <img />
-          <img />
+          <section className="about">
+            <div>
+              <h1>Little Lemon</h1>
+              <h3>Chicago</h3>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <img
+              src={MarioandAdrianA}
+              alt="two chefs in a kitchen"
+              className="under"
+            />
+            <img
+              src={MarioandAdrianb}
+              alt="two chefs smiling in a kitchen"
+              className="over"
+            />
+          </section>
         </article>
       </div>
     </main>
