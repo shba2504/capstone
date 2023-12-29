@@ -4,6 +4,10 @@ import Bruschetta from "../images/Bruschetta.jpg";
 import lemondessert from "../images/lemondessert.jpg";
 import MarioandAdrianA from "../images/MarioandAdrianA.jpg";
 import MarioandAdrianb from "../images/MarioandAdrianb.jpg";
+import woman1 from "../images/woman1.png";
+import man1 from "../images/man1.jpg";
+import woman2 from "../images/woman2.png";
+import man2 from "../images/man2.png";
 
 function Main() {
   return (
@@ -66,11 +70,31 @@ function Main() {
       </div>
       <div>
         <article className="testimonials">
-          <h2>Testimonials</h2>
-          <section className="testimonials"></section>
-          <section className="testimonials"></section>
-          <section className="testimonials"></section>
-          <section className="testimonials"></section>
+          <section className="test1">
+            <h2>Testimonials</h2>
+          </section>
+          <div className="review">
+            <section className="test2">
+              <p>Rating</p>
+              <img src={woman1} alt="older woman" />
+              <p>Review</p>
+            </section>
+            <section className="test2">
+              <p>Rating</p>
+              <img src={man1} alt="young man smiling" />
+              <p>Review</p>
+            </section>
+            <section className="test2">
+              <p>Rating</p>
+              <img src={woman2} alt="young woman" />
+              <p>Review</p>
+            </section>
+            <section className="test2">
+              <p>Rating</p>
+              <img src={man2} alt="teenage boy" />
+              <p>Review</p>
+            </section>
+          </div>
         </article>
       </div>
       <div>
