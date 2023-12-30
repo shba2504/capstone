@@ -29,9 +29,9 @@ function Footer() {
         <section>
           <h4>Contact</h4>
           <ul>
-            <li>Address</li>
-            <li>Phone Number</li>
-            <li>Email</li>
+            <li>2045 W Jackson Blvd Chicago, Illinois(IL), 60612</li>
+            <li>(312) 421-3161</li>
+            <li>littlelemon@gmail.com</li>
           </ul>
         </section>
         <section>
