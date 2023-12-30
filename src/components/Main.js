@@ -63,7 +63,9 @@ function Main() {
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
-              <a href="#">Order Delivery</a>
+              <p>
+                <a href="#">Order Delivery</a>
+              </p>
             </section>
           </div>
         </article>
@@ -77,22 +79,42 @@ function Main() {
             <section className="test2">
               <p>Rating</p>
               <img src={woman1} alt="older woman" />
-              <p>Review</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </section>
             <section className="test2">
               <p>Rating</p>
               <img src={man1} alt="young man smiling" />
-              <p>Review</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </section>
             <section className="test2">
               <p>Rating</p>
               <img src={woman2} alt="young woman" />
-              <p>Review</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </section>
             <section className="test2">
               <p>Rating</p>
               <img src={man2} alt="teenage boy" />
-              <p>Review</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
             </section>
           </div>
         </article>
