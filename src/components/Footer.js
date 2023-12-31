@@ -1,10 +1,10 @@
 function Footer() {
   return (
     <footer>
-      <img src="" alt="" />
       <div className="footer">
+        <img />
         <section>
-          <h4>Doormat Navigation</h4>
+          <h4>Site Navigation</h4>
           <ul>
             <li>
               <a href="#">Home</a>
@@ -29,15 +29,19 @@ function Footer() {
         <section>
           <h4>Contact</h4>
           <ul>
-            <li>2045 W Jackson Blvd Chicago, Illinois(IL), 60612</li>
+            <li>2045 W Jackson Blvd</li>
+            <li>Chicago, Illinois(IL), 60612</li>
             <li>(312) 421-3161</li>
+            <br />
             <li>littlelemon@gmail.com</li>
           </ul>
         </section>
         <section>
-          <h4>Social Media Links</h4>
+          <h4>Social Media</h4>
           <ul>
-            <li></li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
           </ul>
         </section>
       </div>
