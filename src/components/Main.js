@@ -77,7 +77,7 @@ function Main() {
           </section>
           <div className="review">
             <section className="test2">
-              <p>Rating</p>
+              <h4>Name and Rating</h4>
               <img src={woman1} alt="older woman" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -87,7 +87,7 @@ function Main() {
               </p>
             </section>
             <section className="test2">
-              <p>Rating</p>
+              <h4>Name and Rating</h4>
               <img src={man1} alt="young man smiling" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -97,7 +97,7 @@ function Main() {
               </p>
             </section>
             <section className="test2">
-              <p>Rating</p>
+              <h4>Name and Rating</h4>
               <img src={woman2} alt="young woman" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -107,7 +107,7 @@ function Main() {
               </p>
             </section>
             <section className="test2">
-              <p>Rating</p>
+              <h4>Name and Rating</h4>
               <img src={man2} alt="teenage boy" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -125,15 +125,11 @@ function Main() {
             <div>
               <h1>Little Lemon</h1>
               <h3>Chicago</h3>
-              <br />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Little Lemon is a charming neighborhood bistro that serves
+                simple food and classic cocktails in a lively but casual
+                environment. The restaurant features a locally-sourced menu with
+                daily specials.
               </p>
             </div>
             <img
