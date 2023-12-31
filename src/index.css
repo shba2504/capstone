@@ -36,27 +36,22 @@ header img {
   flex: 1;
   width: 30%;
   margin-bottom: 0em;
+  padding-bottom: 0em;
 }
 
-nav ul {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
-  width: 80%;
-  padding: 0em 0em 1em 5em;
-  margin: auto;
-  list-style-type: none;
+nav li {
+  display: none;
 }
 
 a {
   text-decoration: none;
   color: black;
   font-family: karla;
-  font-weight: bold;
 }
 
 a:hover {
   color: #f4ce14;
+  font-weight: bold;
 }
 
 .hero-section {
@@ -178,7 +173,7 @@ button {
   font-weight: normal;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero-section img,
   .review img {
     display: none;
