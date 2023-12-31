@@ -38,7 +38,9 @@ function Main() {
           <div className="container2">
             <section className="item">
               <img src={greeksalad} alt="greek salad with fork" />
-              <h4>Greek Salad $12.99</h4>
+              <h4>
+                Greek Salad <span>$12.99</span>
+              </h4>
               <p>
                 The famous Greek salad of crispy lettuce, peppers, olives, and
                 our Chicago-style feta cheese, garnished with crunchy garlic and
@@ -63,9 +65,7 @@ function Main() {
                 ingredient has been sourced and is as authentic as can be
                 imagined.
               </p>
-              <p>
-                <a href="#">Order Delivery</a>
-              </p>
+              <a href="#">Order Delivery</a>
             </section>
           </div>
         </article>
