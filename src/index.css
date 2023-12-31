@@ -31,12 +31,20 @@ img {
   margin-bottom: 0.5em;
 }
 
-header img {
+.header {
   display: flex;
-  flex: 1;
+}
+
+header img {
   width: 30%;
   margin-bottom: 0em;
   padding-bottom: 0em;
+}
+
+.hamburger {
+  width: 5%;
+  float: right;
+  padding-top: 2.5em;
 }
 
 nav li {
@@ -87,6 +95,11 @@ button {
   border: none;
   font-weight: bold;
   padding: 0.5em 1em 0.5em 1em;
+}
+
+.hero-section img {
+  width: 50%;
+  border-radius: 16px;
 }
 
 .container1 {
@@ -166,6 +179,11 @@ button {
   padding: 0em;
   font-size: 0.9em;
   font-family: karla;
+  padding-bottom: 0.5em;
+}
+
+.footer img {
+  padding-top: 1em;
 }
 
 .footer a {
