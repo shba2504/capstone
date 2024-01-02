@@ -1,9 +1,12 @@
+import React from "react";
 import restaurantfood from "../images/restauranfood.jpg";
+import Reservations from "./Reservations";
+import { Link } from "react-router-dom";
 
-function Header() {
+function CallToAction() {
   return (
-    <header>
-      <div className="hero-section">
+    <div className="hero-section">
+      <header>
         <article>
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
@@ -12,12 +15,14 @@ function Header() {
             traditional recipes served with a modern twist.
           </p>
           <br />
-          <button>Reserve a Table</button>
+          <Link to="/reservations">
+            <button>Reserve a Table</button>
+          </Link>
         </article>
         <img src={restaurantfood} alt="man holding a tray of food" />
-      </div>
-    </header>
+      </header>
+    </div>
   );
 }
 
-export default Header;
+export default CallToAction;

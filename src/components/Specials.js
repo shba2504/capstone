@@ -4,7 +4,7 @@ import lemondessert from "../images/lemondessert.jpg";
 
 function Specials() {
   return (
-    <div className=".specials">
+    <div className="specials">
       <article>
         <div className="container1">
           <section>
