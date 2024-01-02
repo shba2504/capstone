@@ -4,32 +4,31 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="navbar">
-      <nav>
+    <nav className="navbar">
+      <div className="navbar-logo">
         <img src={Logo} alt="Little Lemon logo" />
-        <img src={menu} class="hamburger" alt="hamburger icon" />
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/menu">Menu</Link>
-          </li>
-          <li>
-            <Link to="/reservations">Reservations</Link>
-          </li>
-          <li>
-            <a href="#">Order Online</a>
-          </li>
-          <li>
-            <a href="#">Log In</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/menu">Menu</Link>
+        </li>
+        <li>
+          <Link to="/reservations">Reservations</Link>
+        </li>
+        <li>
+          <a href="#">Order Online</a>
+        </li>
+        <li>
+          <a href="#">Log In</a>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
