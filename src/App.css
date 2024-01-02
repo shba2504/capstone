@@ -25,6 +25,18 @@ p {
   font-family: Karla;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Karla;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  color: #f4ce14;
+  font-weight: bold;
+}
+
 img {
   width: 100%;
   border-radius: 16px;
@@ -37,4 +49,5 @@ button {
   border: none;
   font-weight: bold;
   padding: 0.5em 1em 0.5em 1em;
+  cursor: pointer;
 }
