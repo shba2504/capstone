@@ -6,19 +6,19 @@ function Nav() {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a>Menu</a>
+          <a href="#">Menu</a>
         </li>
         <li>
-          <a>Reservations</a>
+          <a href="#">Reservations</a>
         </li>
         <li>
-          <a>Order Online</a>
+          <a href="#">Order Online</a>
         </li>
         <li>
-          <a>Log In</a>
+          <a href="#">Log In</a>
         </li>
       </ul>
     </nav>

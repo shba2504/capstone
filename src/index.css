@@ -191,7 +191,7 @@ button {
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hero-section img,
   .review img {
     display: none;
