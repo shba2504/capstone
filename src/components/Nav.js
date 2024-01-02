@@ -1,24 +1,30 @@
+import Logo from "../icons/Logo.svg";
+import menu from "../icons/menu.svg";
+import Link from "react-router-dom";
+
 function Nav() {
   return (
     <nav className="navbar">
+      <img src={Logo} alt="Little Lemon logo" />
+      <img src={menu} class="hamburger" alt="hamburger icon" />
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#">Menu</a>
+          <Link to="/menu">Menu</Link>
         </li>
         <li>
-          <a href="#">Reservations</a>
+          <Link to="/reservations">Reservations</Link>
         </li>
         <li>
-          <a href="#">Order Online</a>
+          <Link to="/order">Order Online</Link>
         </li>
         <li>
-          <a href="#">Log In</a>
+          <Link to="/login">Log In</Link>
         </li>
       </ul>
     </nav>
