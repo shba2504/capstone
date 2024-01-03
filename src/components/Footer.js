@@ -23,10 +23,10 @@ function Footer() {
                 <Link to="/reservations">Reservations</Link>
               </li>
               <li>
-                <a href="#">Order Online</a>
+                <Link to="/">Order Online</Link>
               </li>
               <li>
-                <a href="#">Log In</a>
+                <Link to="/">Log In</Link>
               </li>
             </ul>
           </section>

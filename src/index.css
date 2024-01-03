@@ -1,8 +1,10 @@
 .navbar {
   width: 100%;
   display: flex;
+  flex: 1;
   justify-content: space-between;
-  align-items: center;
+  margin: auto;
+  right: 150px;
 }
 
 .navbar-logo {
@@ -63,11 +65,11 @@
 
 .hero-section {
   display: grid;
-  grid-template-columns: 3fr 4fr;
+  grid-template-columns: 5fr 4fr;
   background-color: #495e57;
   color: white;
   padding-top: 0.2em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.7em;
   margin: auto;
   height: 20%;
 }
@@ -77,6 +79,7 @@
   font-size: 64px;
   font-family: markazi;
   margin-bottom: 0em;
+  margin-top: 0.2em;
 }
 
 .hero-section h2 {
@@ -93,16 +96,16 @@
 }
 
 .hero-section img {
-  position: relative;
-  width: 50%;
-  left: 50%;
-  top: 20%;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 250px;
 }
 
 .container1 {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  padding-top: 1em;
+  padding-top: 5.5em;
 }
 
 .container1 h2 {
@@ -240,6 +243,7 @@
   .container1 {
     display: grid;
     grid-template-columns: 3.2fr 1fr;
+    padding-top: 2em;
   }
 
   .container2 {

@@ -42,12 +42,7 @@ const Nav = () => {
 
         {toggleMenu && (
           <div>
-            <img
-              src={Dish}
-              className="overlay_close"
-              alt="serving platter icon"
-              onClick={() => setToggleMenu(false)}
-            />
+            <button onClick={() => setToggleMenu(false)}></button>
             <ul className="navbar-mobile_links">
               <li>
                 <Link to="/">Home</Link>
