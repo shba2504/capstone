@@ -31,15 +31,34 @@
   display: none;
 }
 
-.navbar-mobile-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
+.navbar-mobile_links {
+  list-style-type: none;
+}
+
+.navbar-mobile_links li {
+  margin: 2em;
+  font-family: Karla;
+}
+
+.navbar-mobile_overlay {
+  display: none;
+  width: 70px;
   transition: 1s ease;
   flex-direction: column;
+  padding: 1em 1.5em 0.5em 1.5em;
   z-index: 5;
+}
+
+.navbar-mobile_overlay .hamburger {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.navbar-mobile_overlay .overlay_close {
+  cursor: pointer;
+  position: relative;
+  right: 100px;
 }
 
 .hero-section {
@@ -112,7 +131,7 @@
 }
 
 .item h4 {
-  font-family: Karla;
+  font-family: karla;
   font-size: 18px;
 }
 
@@ -193,10 +212,24 @@
   font-weight: normal;
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .hero-section img,
   .review img {
     display: none;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+
+  .navbar-mobile_overlay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .hero-section {

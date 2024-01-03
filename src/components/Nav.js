@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -25,16 +26,17 @@ const Nav = () => {
           <Link to="/reservations">Reservations</Link>
         </li>
         <li>
-          <a href="#">Order Online</a>
+          <Link to="/">Order Online</Link>
         </li>
         <li>
-          <a href="#">Log In</a>
+          <Link to="/">Log In</Link>
         </li>
       </ul>
       <div className="navbar-mobile_overlay">
         <img
           src={menu}
           alt="hamburger menu"
+          className="hamburger"
           onClick={() => setToggleMenu(true)}
         />
 
@@ -60,10 +62,10 @@ const Nav = () => {
                 <Link to="/reservations">Reservations</Link>
               </li>
               <li>
-                <a href="#">Order Online</a>
+                <Link to="/">Order Online</Link>
               </li>
               <li>
-                <a href="#">Log In</a>
+                <Link to="/">Log In</Link>
               </li>
             </ul>
           </div>
