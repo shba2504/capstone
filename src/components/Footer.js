@@ -1,7 +1,7 @@
 import monologo from "../icons/monologo.png";
 import { Link } from "react-router-dom";
 
-function Footer() {
+const Footer = () => {
   return (
     <div>
       <footer>
@@ -52,6 +52,6 @@ function Footer() {
       </footer>
     </div>
   );
-}
+};
 
 export default Footer;

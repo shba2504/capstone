@@ -2,8 +2,9 @@ import greeksalad from "../images/greeksalad.jpg";
 import Bruschetta from "../images/Bruschetta.jpg";
 import lemondessert from "../images/lemondessert.jpg";
 import { MdDeliveryDining } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-function Specials() {
+const Specials = () => {
   return (
     <div className="specials">
       <article>
@@ -26,7 +27,7 @@ function Specials() {
               Chicago-style feta cheese, garnished with crunchy garlic and
               rosemary croutons.
             </p>
-            <a href="#">Order Delivery</a>
+            <Link to="/">Order Delivery</Link>
             <MdDeliveryDining fontSize={27} className="deliveryicon" />
           </section>
           <section className="item">
@@ -38,7 +39,7 @@ function Specials() {
               Our Bruschetta is made from grilled bread that has been smeared
               with garlic and seasoned with salt and olive oil.
             </p>
-            <a href="#">Order Delivery</a>
+            <Link to="/">Order Delivery</Link>
             <MdDeliveryDining fontSize={27} className="deliveryicon" />
           </section>
           <section className="item">
@@ -51,13 +52,13 @@ function Specials() {
               ingredient has been sourced and is as authentic as can be
               imagined.
             </p>
-            <a href="#">Order Delivery</a>
+            <Link to="/">Order Delivery</Link>
             <MdDeliveryDining fontSize={27} className="deliveryicon" />
           </section>
         </div>
       </article>
     </div>
   );
-}
+};
 
 export default Specials;

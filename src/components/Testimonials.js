@@ -4,7 +4,7 @@ import woman2 from "../images/woman2.png";
 import man2 from "../images/man2.png";
 import { MdOutlineStar } from "react-icons/md";
 
-function Testimonials() {
+const Testimonials = () => {
   return (
     <div>
       <article className="testimonials">
@@ -64,6 +64,6 @@ function Testimonials() {
       </article>
     </div>
   );
-}
+};
 
 export default Testimonials;

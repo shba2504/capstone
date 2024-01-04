@@ -4,7 +4,7 @@ import Specials from "./Specials";
 import About from "./About";
 import BookingPage from "./BookingPage";
 
-function Main() {
+const Main = () => {
   return (
     <div>
       <main>
@@ -17,6 +17,6 @@ function Main() {
       </main>
     </div>
   );
-}
+};
 
 export default Main;

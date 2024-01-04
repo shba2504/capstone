@@ -3,7 +3,7 @@ import restaurantfood from "../images/restauranfood.jpg";
 import BookingPage from "./BookingPage";
 import { Link } from "react-router-dom";
 
-function CallToAction() {
+const CallToAction = () => {
   return (
     <div className="hero-section">
       <header>
