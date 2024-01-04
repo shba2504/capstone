@@ -1,7 +1,7 @@
 import MarioandAdrianA from "../images/MarioandAdrianA.jpg";
 import MarioandAdrianb from "../images/MarioandAdrianb.jpg";
 
-function About() {
+const About = () => {
   return (
     <div>
       <article>
@@ -29,6 +29,6 @@ function About() {
       </article>
     </div>
   );
-}
+};
 
 export default About;

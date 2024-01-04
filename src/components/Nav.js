@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../icons/Logo.svg";
-import menu from "../icons/menu.svg";
-import Dish from "../icons/Dish.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -32,17 +32,20 @@ const Nav = () => {
           <Link to="/">Log In</Link>
         </li>
       </ul>
-      <div className="navbar-mobile_overlay">
-        <img
-          src={menu}
-          alt="hamburger menu"
-          className="hamburger"
+      <div className="navbar-mobile">
+        <GiHamburgerMenu
+          color="#000"
+          fontSize={27}
           onClick={() => setToggleMenu(true)}
         />
 
         {toggleMenu && (
-          <div>
-            <button onClick={() => setToggleMenu(false)}></button>
+          <div className="navbar-mobile_overlay flex_center slide-bottom">
+            <MdOutlineRestaurantMenu
+              fontSize={27}
+              className="overlay_close"
+              onClick={() => setToggleMenu(false)}
+            />
             <ul className="navbar-mobile_links">
               <li>
                 <Link to="/">Home</Link>
@@ -54,7 +57,7 @@ const Nav = () => {
                 <Link to="/menu">Menu</Link>
               </li>
               <li>
-                <Link to="/reservations">Reservations</Link>
+                <Link to="/booking">Reservations</Link>
               </li>
               <li>
                 <Link to="/">Order Online</Link>

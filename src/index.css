@@ -4,7 +4,7 @@
   flex: 1;
   justify-content: space-between;
   margin: auto;
-  right: 150px;
+  right: 100%;
 }
 
 .navbar-logo {
@@ -44,23 +44,16 @@
 
 .navbar-mobile_overlay {
   display: none;
-  width: 70px;
-  transition: 1s ease;
-  flex-direction: column;
   padding: 1em 1.5em 0.5em 1.5em;
-  z-index: 5;
-}
-
-.navbar-mobile_overlay .hamburger {
-  width: 100px;
-  height: 30px;
   cursor: pointer;
+  background-color: white;
 }
 
 .navbar-mobile_overlay .overlay_close {
   cursor: pointer;
-  position: relative;
-  right: 100px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .hero-section {
@@ -104,12 +97,16 @@
 
 .container1 {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding-top: 5.5em;
 }
 
 .container1 h2 {
   margin-top: 0em;
+}
+
+.onlinemenu {
+  float: right;
 }
 
 .container2 {
@@ -125,17 +122,34 @@
   margin-top: 1em;
   padding-bottom: 1.5em;
   border-radius: 16px;
+  line-height: 1.5em;
+}
+
+.item a {
+  font-weight: bold;
 }
 
 .item h4,
 .item p,
 .item a {
   margin: 1em;
+  color: black;
 }
 
 .item h4 {
   font-family: karla;
   font-size: 18px;
+}
+
+.price {
+  float: right;
+  color: #ee9972;
+}
+
+.deliveryicon {
+  color: #495e57;
+  position: relative;
+  top: 8px;
 }
 
 .testimonials {
@@ -149,6 +163,9 @@
   padding-top: 1em;
 }
 
+.test2 h4 {
+  text-align: center;
+}
 .review {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -227,12 +244,26 @@
 
   .navbar-mobile {
     display: flex;
+    width: 70px;
+    padding-top: 15px;
+    right: 30px;
   }
 
   .navbar-mobile_overlay {
     display: flex;
-    justify-content: flex-end;
+    transition: 1s ease;
+    flex-direction: column;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    right: 0px;
+    background-color: #495e57;
+    z-index: 5;
+  }
+
+  .navbar-mobile_links a {
+    color: white;
   }
 
   .hero-section {

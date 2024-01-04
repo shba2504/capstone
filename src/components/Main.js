@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Specials from "./Specials";
 import About from "./About";
-import Reservations from "./Reservations";
+import BookingPage from "./BookingPage";
 
 function Main() {
   return (
@@ -12,7 +12,7 @@ function Main() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Specials />} />
-          <Route path="/reservations" element={<Reservations />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </main>
     </div>
