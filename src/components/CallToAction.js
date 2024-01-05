@@ -1,6 +1,5 @@
 import React from "react";
 import restaurantfood from "../images/restauranfood.jpg";
-import BookingPage from "./BookingPage";
 import { Link } from "react-router-dom";
 
 const CallToAction = () => {
@@ -16,13 +15,13 @@ const CallToAction = () => {
           </p>
           <br />
           <Link to="/booking">
-            <button onClick={() => {}}>Reserve a Table</button>
+            <button aria-label="On Click">Reserve a Table</button>
           </Link>
         </article>
         <img src={restaurantfood} alt="man holding a tray of food" />
       </header>
     </div>
   );
-}
+};
 
 export default CallToAction;

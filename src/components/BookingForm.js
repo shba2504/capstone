@@ -1,51 +1,71 @@
 import React, { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
   const [resDate, setResDate] = useState("");
+  const [resTime, setResTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
-  const [makeYourReservation, setMakeYourReservation] = useState("");
-  const [availableTimes, setavailableTimes] = useState([]);
 
+  const handleChange = (e) => {
+    setResDate(e);
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Booking has been confirmed!");
+    alert("Booking has been confirmed!");
+    clearForm();
+  };
+
+  const getIsFormValid = () => {
+    return resDate && resTime && guests;
+  };
+
+  const clearForm = () => {
+    setResDate("");
+    setResTime("");
+    setGuests("");
+    setOccasion("");
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
-        <h2>Book Reservation</h2>
+        <h2>Reservations</h2>
         <div className="Field">
           <label htmlFor="res-date">Select Date:</label>
           <input
             type="date"
             id="res-date"
             value={resDate}
-            onChange={(e) => setResDate(e.target.value)}
+            onChange={(e) => handleChange(e.target.value)}
+            required
           />
         </div>
         <div className="Field">
           <label htmlFor="res-time">Select Time:</label>
           <select
             id="res-time"
-            value={availableTimes}
-            onChange={(e) => setavailableTimes(e.target.value)}
+            value={resTime}
+            onChange={(e) => setResTime(e.target.value)}
+            required
           >
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-            <option value="19:00">19:00</option>
-            <option value="20:00">20:00</option>
-            <option value="21:00">21:00</option>
-            <option value="22:00">22:00</option>
+            <option value=""></option>
+            <option value="5:00">5:00 PM</option>
+            <option value="5:30">5:30 PM</option>
+            <option value="6:00">6:00 PM</option>
+            <option value="6:30">6:30 PM</option>
+            <option value="7:00">7:00 PM</option>
+            <option value="7:30">7:30 PM</option>
+            <option value="8:00">8:00 PM</option>
+            <option value="8:30">8:30 PM</option>
+            <option value="9:00">9:30 PM</option>
           </select>
         </div>
         <div className="Field">
           <label htmlFor="guests">Number of Guests:</label>
           <input
             type="number"
-            placeholder="1"
-            min="1"
+            placeholder="2"
+            min="2"
             max="10"
             id="guests"
             value={guests}
@@ -53,21 +73,25 @@ const BookingForm = () => {
           />
         </div>
         <div className="Field">
-          <label htmlFor="occasion">Occasion:</label>
+          <label htmlFor="occasion">Special Occasion:</label>
           <select
             id="occasion"
             value={occasion}
             onChange={(e) => setOccasion(e.target.value)}
           >
+            <option>None</option>
             <option>Birthday</option>
             <option>Anniversary</option>
           </select>
         </div>
-        <input
+        <button
           type="submit"
-          value={makeYourReservation}
-          onChange={(e) => setMakeYourReservation(e.target.value)}
-        />
+          className="book"
+          disabled={!getIsFormValid()}
+          onSubmit={handleSubmit}
+        >
+          Book Reservation
+        </button>
       </fieldset>
     </form>
   );

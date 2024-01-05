@@ -66,6 +66,12 @@ p {
   font-family: Karla;
 }
 
+form {
+  background-color: #495e57;
+  color: white;
+  font-weight: bold;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;

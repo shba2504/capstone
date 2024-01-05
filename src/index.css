@@ -95,6 +95,36 @@
   width: 250px;
 }
 
+form h2 {
+  text-align: center;
+}
+
+.Field {
+  padding: 1em 2em;
+}
+
+label {
+  margin-right: 20px;
+}
+
+#res-date,
+#res-time,
+#guests,
+#occasion {
+  padding: 0.7em;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.book {
+  position: relative;
+  left: 2em;
+  padding: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
 .container1 {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -247,6 +277,7 @@
     width: 70px;
     padding-top: 15px;
     right: 30px;
+    cursor: pointer;
   }
 
   .navbar-mobile_overlay {
@@ -264,6 +295,8 @@
 
   .navbar-mobile_links a {
     color: white;
+    font-weight: bold;
+    font-size: 18px;
   }
 
   .hero-section {
