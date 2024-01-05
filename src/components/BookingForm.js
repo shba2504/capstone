@@ -64,7 +64,6 @@ const BookingForm = (props) => {
           <label htmlFor="guests">Number of Guests:</label>
           <input
             type="number"
-            placeholder="2"
             min="2"
             max="10"
             id="guests"
