@@ -6,8 +6,6 @@ import App from "../App";
 import BookingForm from "./BookingForm";
 
 const Main = () => {
-  //const initialState = { availableTimes };//
-  //const [state, dispatch] = useReducer(updateTimes, initializeTimes);//
   return (
     <main>
       <Routes>
