@@ -3,10 +3,10 @@ import MarioandAdrianb from "../images/MarioandAdrianb.jpg";
 
 const About = () => {
   return (
-    <div>
+    <>
       <article>
         <section className="about">
-          <div>
+          <>
             <h1>Little Lemon</h1>
             <h3>Chicago</h3>
             <p>
@@ -14,7 +14,7 @@ const About = () => {
               food and classic cocktails in a lively but casual environment. The
               restaurant features a locally-sourced menu with daily specials.
             </p>
-          </div>
+          </>
           <img
             src={MarioandAdrianA}
             alt="two chefs in a kitchen"
@@ -27,7 +27,7 @@ const About = () => {
           />
         </section>
       </article>
-    </div>
+    </>
   );
 };
 

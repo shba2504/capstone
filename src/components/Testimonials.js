@@ -6,7 +6,7 @@ import { MdOutlineStar } from "react-icons/md";
 
 const Testimonials = () => {
   return (
-    <div>
+    <>
       <article className="testimonials">
         <section className="test1">
           <h2>Testimonials</h2>
@@ -62,7 +62,7 @@ const Testimonials = () => {
           </section>
         </div>
       </article>
-    </div>
+    </>
   );
 };
 

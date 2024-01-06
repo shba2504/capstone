@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer>
         <div className="footer">
           <img src={monologo} alt="monochrome logo for Little Lemon" />
@@ -50,7 +50,7 @@ const Footer = () => {
           </section>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
