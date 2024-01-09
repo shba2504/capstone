@@ -8,7 +8,7 @@ const BookingForm = (props) => {
 
   const handleChange = (e) => {
     setResDate(e);
-    dispatch({ type: "update_times" });
+    dispatch({ type: "update_times", setResDate });
   };
 
   const handleSubmit = (e) => {
