@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import Nav from "./Nav";
 import CallToAction from "./CallToAction";
 import Specials from "./Specials";
@@ -7,6 +7,21 @@ import About from "./About";
 import Footer from "./Footer";
 
 const Home = () => {
+  const initializeTimes = () => {
+    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  };
+
+  const updateTimes = (availableTimes, action) => {
+    switch (action.type) {
+      case "update_times": {
+        return { availableTimes };
+      }
+    }
+    throw Error("No available times for the date selected.");
+  };
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
+
   return (
     <>
       <Nav />

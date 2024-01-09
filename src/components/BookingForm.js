@@ -8,7 +8,9 @@ const BookingForm = (props) => {
 
   const handleChange = (e) => {
     setResDate(e);
+    dispatch({ type: "update_times" });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Booking has been confirmed!");
@@ -48,16 +50,9 @@ const BookingForm = (props) => {
             onChange={(e) => setResTime(e.target.value)}
             required
           >
-            <option value=""></option>
-            <option value="5:00">5:00 PM</option>
-            <option value="5:30">5:30 PM</option>
-            <option value="6:00">6:00 PM</option>
-            <option value="6:30">6:30 PM</option>
-            <option value="7:00">7:00 PM</option>
-            <option value="7:30">7:30 PM</option>
-            <option value="8:00">8:00 PM</option>
-            <option value="8:30">8:30 PM</option>
-            <option value="9:00">9:30 PM</option>
+            {props.availableTimes.availableTimes.map((availableTime) => (
+              <option key={availableTime}>{availableTime}</option>
+            ))}
           </select>
         </div>
         <div className="Field">
