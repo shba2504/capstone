@@ -1,14 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const BookingForm = (props) => {
+const BookingForm = () => {
   const [resDate, setResDate] = useState("");
   const [resTime, setResTime] = useState("");
   const [guests, setGuests] = useState("");
   const [occasion, setOccasion] = useState("");
 
   const handleChange = (e) => {
-    setResDate(e);
-    dispatch({ type: "update_times", setResDate });
+    setResDate(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -50,9 +50,15 @@ const BookingForm = (props) => {
             onChange={(e) => setResTime(e.target.value)}
             required
           >
-            {props.availableTimes.availableTimes.map((availableTime) => (
-              <option key={availableTime}>{availableTime}</option>
-            ))}
+            <option>17:00 PM</option>
+            <option>17:30 PM</option>
+            <option>18:00 PM</option>
+            <option>18:30 PM</option>
+            <option>19:00 PM</option>
+            <option>19:30 PM</option>
+            <option>20:00 PM</option>
+            <option>20:30 PM</option>
+            <option>21:00 PM</option>
           </select>
         </div>
         <div className="Field">
@@ -78,14 +84,16 @@ const BookingForm = (props) => {
             <option>Anniversary</option>
           </select>
         </div>
-        <button
-          type="submit"
-          className="book"
-          disabled={!getIsFormValid()}
-          onSubmit={handleSubmit}
-        >
-          Book Reservation
-        </button>
+        <Link to="/confirmed">
+          <button
+            type="submit"
+            className="book"
+            disabled={!getIsFormValid()}
+            onSubmit={handleSubmit}
+          >
+            Book Reservation
+          </button>
+        </Link>
       </fieldset>
     </form>
   );

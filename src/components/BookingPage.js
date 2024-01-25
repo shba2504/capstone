@@ -1,15 +1,12 @@
 import BookingForm from "./BookingForm";
 import Nav from "./Nav";
-import React, { useState } from "react";
+import React from "react";
 
-const BookingPage = (props) => {
+const BookingPage = () => {
   return (
     <>
       <Nav />
-      <BookingForm
-        availableTimes={props.availableTimes}
-        dispatch={props.dispatch}
-      />
+      <BookingForm />
     </>
   );
 };
